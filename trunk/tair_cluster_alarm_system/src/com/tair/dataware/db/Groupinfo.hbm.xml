@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2011-7-27 17:45:15 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.tair.dataware.db.Groupinfo" table="groupinfo" catalog="test">
+        <id name="gid" type="java.lang.Integer">
+            <column name="Gid" />
+            <generator class="identity" />
+        </id>
+        <property name="domainA" type="string">
+            <column name="DomainA" not-null="true" />
+        </property>
+        <property name="ipa" type="string">
+            <column name="IPA" length="15" />
+        </property>
+        <property name="portA" type="int">
+            <column name="PortA" not-null="true" />
+        </property>
+        <property name="domainB" type="string">
+            <column name="DomainB" />
+        </property>
+        <property name="ipb" type="string">
+            <column name="IPB" length="15" />
+        </property>
+        <property name="portB" type="java.lang.Integer">
+            <column name="PortB" />
+        </property>
+        <property name="groupName" type="string">
+            <column name="GroupName" length="64" />
+        </property>
+        <property name="description" type="string">
+            <column name="Description" />
+        </property>
+        <property name="tairRelease" type="string">
+            <column name="TairRelease" length="8" />
+        </property>
+        <property name="scene" type="string">
+            <column name="Scene" length="16" />
+        </property>
+        <property name="monitorUrlbase" type="string">
+            <column name="MonitorURLBase" />
+        </property>
+        <property name="wikiUrl" type="string">
+            <column name="WikiURL" />
+        </property>
+    </class>
+</hibernate-mapping>

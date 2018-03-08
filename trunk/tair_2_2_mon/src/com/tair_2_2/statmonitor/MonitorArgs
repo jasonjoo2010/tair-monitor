@@ -1,0 +1,4 @@
+configserverA=10.232.12.140:5198
+configserverB=10.232.15.122:5198
+groupname=group_1
+interval=5
